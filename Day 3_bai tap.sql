@@ -32,4 +32,17 @@ where not (referee_id= '2') or referee_id is null
 select name, population, area from world
 where (area >= 3000000 or population >= 25000000)
 --baitap12
+select distinct author_id as id from views
+where author_id=viewer_id
+order by author_id ASC
+--baitap13
+SELECT part FROM parts_assembly
+where finish_date is NULL
+--baitap14
+select * from lyft_drivers;
+where yearly_salary <= 30 or yearly_salary >=70
+--baitap15
+select advertising_channel from uber_advertising;
+where year = 2019 and money_spent >100000
+
 
